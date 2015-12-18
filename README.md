@@ -1,2 +1,2 @@
 # JsDateFormatter
-add toString('yyyy-MM-dd') to Date in js
+add toString('yyyy-MM-dd') method to Date.prototype in js
