@@ -17,6 +17,3 @@ Date.prototype.toString = function(formatter) {
         .replace(/MM/, getField('MM'))
         .replace(/dd/, getField('dd'))
 }
-
-var d = new Date();
-console.info(d.toString('yyyy-MM-dd'));
