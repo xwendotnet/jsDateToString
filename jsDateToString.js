@@ -1,19 +1,35 @@
-if (Date.prototype.toString.length === 0) {
+(function() {
+    if (Date.prototype.toString.length === 0) {
+    var old = Date.prototype.toString;
+
     Date.prototype.toString = function(formatter) {
+        if (formatter === undefined || formatter === null) {
+            return old.call(this);
+        }
+
         var that = this;
         var partens = {
             'yyyy' : function() {
-                return that.getFullYear() + 1;
+                return that.getFullYear();
             },
             'yy' : function() {
                 var year = that.getYear();
-                return (year >= 100 ? year - 100 : year) + 1;
+                return (year >= 100 ? year - 100 : year);
             },
             'MM' : function() {
+                var month =  that.getMonth() + 1;
+                return month < 10 ? '0' + month : month;
+            },
+            'M' : function() {
                 return that.getMonth() + 1;
             },
             'dd' : function() {
-                return that.getDate();
+                var date =  that.getDate();
+                if (date < 10) {
+                    return '0' + date;
+                }else {
+                    return date;
+                }
             },
             'd' : function() {
                 return that.getDay();
@@ -80,4 +96,4 @@ if (Date.prototype.toString.length === 0) {
         }
         return str;
     }
-}
+}})();
