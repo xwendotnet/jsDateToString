@@ -1,6 +1,6 @@
 {
   "name": "date-tostring",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Add C# style Date.ToString to Date.prototype.ToString",
   "main": "jsDateToString.js",
   "scripts": {
