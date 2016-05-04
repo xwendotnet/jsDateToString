@@ -1,0 +1,24 @@
+{
+  "name": "date-tostring",
+  "version": "0.1.0",
+  "description": "Add C# style Date.ToString to Date.prototype.ToString",
+  "main": "jsDateToString.js",
+  "scripts": {
+    "test": "mocha jsDateToString.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xwendotnet/JsDateFormatter.git"
+  },
+  "keywords": [
+    "js",
+    "date",
+    "format"
+  ],
+  "author": "xwen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xwendotnet/JsDateFormatter/issues"
+  },
+  "homepage": "https://github.com/xwendotnet/JsDateFormatter#readme"
+}

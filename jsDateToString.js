@@ -51,11 +51,11 @@
                 return hour; 
             },
             'mm' : function() {
-                return that.getMinutes();
-            },
-            'm' : function() {
                 var min =  that.getMinutes();
                 return min < 10 ? '0' + min : min;
+            },
+            'm' : function() {
+                return that.getMinutes();
             },
             'ssss' : function() {
                 return that.getMilliseconds();
